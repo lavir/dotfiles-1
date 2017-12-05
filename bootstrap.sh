@@ -15,7 +15,7 @@ xcode-select --install
 echo "./packages/setup.sh"
 ./packages/setup.sh
 
-find * -name "setup.sh" -not -wholename "packages*" | while read setup; do
+find * -name "setup.sh" -not -wholename "packages*" -not -wholename "_*" | while read setup; do
     echo "./$setup"
     ./$setup -chsh
 done

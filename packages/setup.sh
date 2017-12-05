@@ -10,7 +10,7 @@ sudo -v
 # Install Brewfile contents
 brew bundle
 
-find * -name "*.list" | while read fn; do
+find * -not -name "_*.list" -name "*.list" | while read fn; do
     cmd="${fn%.*}"
     while read package; do
         if [[ $package == $COMMENT ]];
