@@ -40,6 +40,7 @@ echo "fisher done" | fish
 
 # Install oh-my-fish
 curl -L https://get.oh-my.fish | fish
+# https://github.com/oh-my-fish/theme-bobthefish
 echo "omf install await bobthefish" | fish
 
 echo "Apply theme"
