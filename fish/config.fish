@@ -18,8 +18,8 @@ set -x -g PATH (brew --prefix findutils)/libexec/gnubin $PATH
 set PATH $PATH /usr/local/opt/python/libexec/bin
 
 # Init Powerline (https://powerline.readthedocs.io/en/latest/usage.html)
-set -q POWERLINE_PACKAGE_DIR; or set -gx POWERLINE_PACKAGE_DIR (pip show powerline-status 2>/dev/null | grep Location | awk '{ print $2 }')
-set fish_function_path $fish_function_path "$POWERLINE_PACKAGE_DIR/powerline/bindings/fish"
-set XDG_CONFIG_DIRS "~/.config/"
+#set -q POWERLINE_PACKAGE_DIR; or set -gx POWERLINE_PACKAGE_DIR (pip show powerline-status 2>/dev/null | grep Location | awk '{ print $2 }')
+#set fish_function_path $fish_function_path "$POWERLINE_PACKAGE_DIR/powerline/bindings/fish"
+#set XDG_CONFIG_DIRS "~/.config/"
 
-powerline-setup
+#powerline-setup

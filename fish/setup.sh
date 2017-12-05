@@ -36,11 +36,11 @@ echo "Install Fisherman"
 curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 
 # Install plugins
-echo "fisher done humanize_duration" | fish
+echo "fisher done" | fish
 
 # Install oh-my-fish
 curl -L https://get.oh-my.fish | fish
-echo "omf install await agnoster" | fish
+echo "omf install await bobthefish" | fish
 
 echo "Apply theme"
-echo "omf theme agnoster" | fish
+echo "omf theme bobthefish" | fish
