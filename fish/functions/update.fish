@@ -4,8 +4,8 @@ function update
     brew update
     brew upgrade --force --all
     brew cleanup
-    npm install npm -g
-    npm update -g
-    sudo gem update --system
-    sudo gem update
+    # npm install npm -g
+    # npm update -g
+    # sudo gem update --system
+    # sudo gem update
 end
