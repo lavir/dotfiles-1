@@ -9,12 +9,3 @@ set -x -g PATH (brew --prefix coreutils)/libexec/gnubin $PATH
 # Findutils bin and man folders
 set -x -g PATH (brew --prefix findutils)/libexec/gnubin $PATH
 # set -x -g MANPATH (brew --prefix findutils)/libexec/gnuman $MANPATH
-
-# User bin folder
-set -x -g PATH ~/anaconda3/bin $PATH ~/bin /usr/local/sbin
-
-# Composer
-set -x -g PATH ~/.composer/vendor/bin $PATH
-
-# Source conda.fish
-source (conda info --root)/etc/fish/conf.d/conda.fish

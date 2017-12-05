@@ -1,104 +1,163 @@
 cask_args appdir: '/Applications'
 
+tap "homebrew/core"
 tap 'caskroom/cask'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
 tap 'homebrew/completions'
 tap 'homebrew/php'
-tap 'homebrew/versions'
 tap 'buo/cask-upgrade'
 
-brew 'ant'
 brew 'brew-cask-completion'
-brew 'composer'
 brew 'coreutils'
 brew 'duti'
 brew 'findutils', args: ['with-default-names']
 brew 'fish'
-brew 'gcc'
-brew 'gdb'
-brew 'git'
-brew 'glib'
-brew 'gradle'
-brew 'lua'
-brew 'mas'
 brew 'maven'
-brew 'mongodb'
-brew 'mysql'
-brew 'nginx'
-brew 'node'
-brew 'openssl'
-brew 'php71'
-brew 'postgresql'
-brew 'sqlite'
 brew 'ssh-copy-id'
-brew 'swagger-codegen'
-brew 'wget'
-brew 'valgrind'
 
-cask 'adobe-air'
-cask 'adobe-reader'
+# Mac App Store command-line interface
+brew 'mas'
+
+# Install `wget` with IRI support.
+brew 'wget', args: ['with-iri']
+
+# Install more recent versions of some macOS tools.
+brew 'grep'
+brew 'openssh'
+brew 'openssl'
+brew 'screen'
+
+# Install font tools.
+tap 'bramstein/webfonttools'
+brew 'sfnt2woff'
+brew 'sfnt2woff-zopfli'
+brew 'woff2'
+
+# Install some CTF tools; see https://github.com/ctfs/write-ups.
+
+brew 'aircrack-ng'
+brew 'dns2tcp'
+brew 'hydra'
+
+# Install other useful binaries.
+# Search tool like grep, but optimized for programmers
+# brew 'ack'
+brew 'git'
+brew 'mercurial'
+
+# Use GraphicsMagick instead
+# brew 'imagemagick', args: [with-webp]
+brew 'ghostscript'
+brew 'graphicsmagick'
+
+# Image manipulation library
+# http://www.ijg.org
+brew 'jpeg'
+
+brew 'duti'
+brew 'exiftool'
+brew 'ffmpeg'
+brew 'htop-osx'
+brew 'httpie'
+brew 'n'
+brew 'p7zip'
+# Monitor data's progress through a pipe
+brew 'pv'
+brew 'python'
+brew 'python3'
+brew 'speedtest_cli'
+# SSH server auditing (https://github.com/arthepsy/ssh-audit)
+brew 'ssh-audit'
+# Tool which checks for the support of TLS/SSL ciphers and flaws (https://testssl.sh/)
+brew 'testssl'
+brew 'tree'
+brew 'youtube-dl'
+
+# Command-line tool to manage your ssh connections
+# https://github.com/emre/storm
+brew 'stormssh'
+
+# Version Control Visualization Tool
+# brew 'gource'
+
+# DNS benchmark utility
+# brew 'namebench'
+
+# For the copy-to-pluto script
+# brew 'jhead'
+brew 'terminal-notifier'
+# brew 'nmap'
+
+# Install Hammerspoon (http://www.hammerspoon.org/)
+# cask 'hammerspoon'
+
+
 cask 'alfred'
-cask 'anaconda'
-cask 'android-sdk'
-cask 'android-studio'
 cask 'bartender'
-# cask 'battle-net'
-cask 'blender'
-cask 'caret'
-cask 'citrix-receiver'
 cask 'cleanmymac'
 cask 'daisydisk'
-cask 'dashlane'
 cask 'docker'
-cask 'dropbox'
-cask 'exodus'
-cask 'flux'
-cask 'freecad'
-cask 'godot'
 cask 'google-chrome'
-cask 'google-drive'
-cask 'hammerspoon'
-cask 'intellij-idea'
 cask 'iterm2'
-
-cask 'java'
-cask 'karabiner-elements'
-cask 'keepassx'
-cask 'little-snitch'
-cask 'logitech-gaming-software'
-cask 'love'
-cask 'mac2imgur'
-cask 'microsoft-office'
+cask 'ksdiff'
 cask 'mongodb-compass'
-cask 'mysqlworkbench'
-cask 'p4merge'
-cask 'paintbrush'
-cask 'pgadmin4'
-cask 'postman'
-cask 'real-vnc'
 cask 'skype'
 cask 'slack'
-cask 'soulseek'
-cask 'soundflower'
 cask 'sourcetree'
 cask 'spotify'
-cask 'starleaf-breeze'
-cask 'steam'
-cask 'teamviewer'
 cask 'telegram'
 cask 'the-unarchiver'
-cask 'transmission'
-cask 'unity'
-cask 'viscosity'
-cask 'visual-studio-code'
-cask 'vlc'
-cask 'vmware-fusion'
-cask 'whatsapp'
-cask 'xquartz'
+# cask 'visual-studio-code'
+cask 'visual-studio-code-insiders'
 
-mas 'Amphetamine', id: 937984704
-mas 'Microsoft Remote Desktop', id: 715768417
-mas 'Unclutter', id: 577085396
-mas 'Wunderlist', id: 410628904
-mas 'Xcode', id: 497799835
+# Beautiful & Clever Markdown Editor
+# cask 'caret'
+
+# All-in-one app to secure, manage and exchange blockchain assets.
+# cask 'exodus'
+
+# FreeCAD is a parametric 3D modeler made primarily to design real-life objects of any size. 
+# cask 'freecad'
+cask 'vlc'
+cask 'whatsapp'
+
+# Bundler for non-Ruby dependencies from Homebrew
+# https://github.com/Homebrew/homebrew-bundle
+# https://github.com/mas-cli/mas
+
+# mas "ArcSoft Photo+", id: 628703558
+# mas "ContactsMate", id: 1236603338
+# mas "DjVu Reader", id: 733144595
+mas "Fantastical 2", id: 975937182
+mas "Gapplin", id: 768053424
+mas "Home Inventory", id: 413564952
+# mas "iMovie", id: 408981434
+# mas "Intensify", id: 716854513
+mas "IP Scanner Home", id: 422293948
+mas "Kaleidoscope", id: 587512244
+# mas "Keynote", id: 409183694
+mas "LastPass", id: 926036361
+# mas "Lingvo Dictionary", id: 467622356
+# mas "MacFamilyTree 7", id: 572280828
+mas "MediaInfo", id: 510620098
+# mas "Noizio", id: 928871589
+# mas "Numbers", id: 409203825
+# mas "Pages", id: 409201541
+mas "Pixelmator", id: 407963104
+mas "Pocket", id: 568494494
+mas "Quiver", id: 866773894
+mas "Reeder", id: 880001334
+mas "Screen Commander", id: 1213310371
+mas "Shazam", id: 897118787
+# mas "Snapselect", id: 935700987
+mas "Spark", id: 1176895641
+# mas "SQLPro for Postgres", id: 976140091
+# mas "SQLPro for SQLite", id: 586001240
+# mas "Tomates Time Management", id: 1062002496
+mas "Translate Tab", id: 458887729
+mas "Tweetbot", id: 557168941
+# mas "VOX", id: 461369673
+mas "WiFi Explorer", id: 494803304
+# mas "Xcode", id: 497799835
+mas "Yummy FTP", id: 492068728

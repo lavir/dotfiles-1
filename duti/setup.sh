@@ -1,5 +1,7 @@
 #! /usr/bin/env sh
 
+# Tips: BundleID mdls -name kMDItemCFBundleIdentifier -r "/Applications/App Name.app"
+
 DIR=$(dirname "$0")
 cd "$DIR"
 
