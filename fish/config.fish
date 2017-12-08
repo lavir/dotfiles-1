@@ -23,3 +23,6 @@ set PATH $PATH /usr/local/opt/python/libexec/bin
 #set XDG_CONFIG_DIRS "~/.config/"
 
 #powerline-setup
+
+# Settings theme-bobthefish
+set -g theme_display_ruby no
