@@ -36,7 +36,7 @@ echo "Install Fisherman"
 curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 
 # Install plugins
-# echo "fisher done" | fish
+echo "fisher edc/bass" | fish
 
 # Install oh-my-fish
 curl -L https://get.oh-my.fish | fish

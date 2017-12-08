@@ -26,3 +26,6 @@ set PATH $PATH /usr/local/opt/python/libexec/bin
 
 # Settings theme-bobthefish
 set -g theme_display_ruby no
+
+# Add a folder to autoload
+set fish_function_path $fish_function_path "$HOME/.config/fish/functions/projects"
