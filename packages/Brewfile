@@ -36,9 +36,9 @@ brew 'woff2'
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 
-brew 'aircrack-ng'
-brew 'dns2tcp'
-brew 'hydra'
+# brew 'aircrack-ng'
+# brew 'dns2tcp'
+# brew 'hydra'
 
 # Install other useful binaries.
 # Search tool like grep, but optimized for programmers
