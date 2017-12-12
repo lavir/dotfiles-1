@@ -55,6 +55,8 @@ brew 'graphicsmagick'
 # http://www.ijg.org
 brew 'jpeg'
 
+# Download with resuming and segmented downloading
+brew 'aria2'
 brew 'duti'
 brew 'exiftool'
 brew 'ffmpeg'
